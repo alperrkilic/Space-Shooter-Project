@@ -12,6 +12,12 @@ public class Laser : MonoBehaviour
 
         if(transform.position.y > 8f) // after laser is not seen anymore, destroy the object.
         {
+
+            if(transform.parent != null) // Parent of the laser can be triple shot, with this control statement, we're deleting empty objects
+            {
+                Destroy(transform.parent.gameObject);
+            }
+
             Destroy(this.gameObject);
         }
 

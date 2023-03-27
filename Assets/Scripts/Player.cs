@@ -23,6 +23,10 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private GameObject _shieldVisualizer;
+    [SerializeField]
+    private GameObject _rightEngine;
+    [SerializeField]
+    private GameObject _leftEngine;
 
     //private bool _isSpeedBoostActive = false;
     private bool _isTripleShotActive = false;
@@ -31,6 +35,10 @@ public class Player : MonoBehaviour
     private int _score = 0;
     private UIManager _uiManager;
 
+    [SerializeField]
+    private AudioClip _laserSoundClip;
+    private AudioSource _audioSource;
+
 // Start is called before the first frame update
 void Start()
     {
@@ -38,6 +46,7 @@ void Start()
         transform.position = new Vector3(0, 0, 0);
         _spawnManager = GameObject.Find("Spawn_Manager").GetComponent<SpawnManager>(); // accessing to spawn manager
         _uiManager = GameObject.Find("Canvas").GetComponent<UIManager>(); // accessing to UI manager
+        _audioSource = GetComponent<AudioSource>();
 
         if(_spawnManager == null)
         {
@@ -47,6 +56,15 @@ void Start()
         if(_uiManager == null)
         {
             Debug.LogError("The UI Manager is NULL");
+        }
+
+        if(_audioSource == null)
+        {
+            Debug.LogError("The Audio Source on the player is NULL");
+        }
+        else
+        {
+            _audioSource.clip = _laserSoundClip;
         }
 
 
@@ -96,6 +114,8 @@ void Start()
             Instantiate(_laserPrefab, transform.position + new Vector3(0, 1.2f, 0), Quaternion.identity); // Quaternion.Identity -> default rotation
         }
 
+        _audioSource.Play();
+
     }
 
     public void Damage()
@@ -111,6 +131,15 @@ void Start()
 
         _lives--; // if damaged, reduce life by one
         _uiManager.UpdateLives(_lives); // update ui lives
+
+        if(_lives == 2)
+        {
+            _rightEngine.SetActive(true);
+        }
+        else if(_lives == 1)
+        {
+            _leftEngine.SetActive(true);
+        }
 
 
         if(_lives <= 0) // if player is dead, also spawning enemies must stop.

@@ -53,8 +53,8 @@ public class UIManager : MonoBehaviour
     {
         _gameManager.GameOver();
         _gameOverText.gameObject.SetActive(true); // if player is dead, making game over text visible
-        _restartText.gameObject.SetActive(true);
-        StartCoroutine(GameOverFlickerRoutine());
+        _restartText.gameObject.SetActive(true); // making restart text visible
+        StartCoroutine(GameOverFlickerRoutine()); // activating arcade looking flicker routine
     }
 
     IEnumerator GameOverFlickerRoutine()

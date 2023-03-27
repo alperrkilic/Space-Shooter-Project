@@ -10,13 +10,9 @@ public class Powerup : MonoBehaviour
     // ID for Powerups: Triple Shot = 0, Speed = 1, Shields = 2
     [SerializeField]
     private int powerupID;
+    [SerializeField]
+    private AudioClip _clip;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -34,6 +30,8 @@ public class Powerup : MonoBehaviour
         if(other.tag == "Player") // if collided object is player, than we'll activate triple shot powerup
         {
             Player player = other.transform.GetComponent<Player>(); // accessing to the player component
+
+            AudioSource.PlayClipAtPoint(_clip, transform.position);
 
             if(player!= null)
             {

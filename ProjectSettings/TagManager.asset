@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Enemy
   - Laser
+  - EnemyLeftAndRightLasers
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Post Processing
   - Water
   - UI
   - 

@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img align="center" width="1200" height="520" src="Readme-Images/space-shooter.gif">
+<img align="center" width="1200" height="520" src="https://github.com/alperrkilic/Space-Shooter-Project/blob/master/Readme-Images/space-shooter.gif?raw=true">
 
 
 Space Shooter is a thrilling 2D game developed by a solo game developer who utilized Unity and C# to create an immersive gameplay experience. In this game, you take on the role of a skilled space pilot who must fight off waves of enemy spaceships and survive for as long as possible. You have three lives and must avoid getting hit by enemy lasers while collecting power-ups to increase your chances of survival. The power-ups include speed, shield, and triple shot, which can give you a temporary advantage. However, be careful as your shield can be destroyed if you collide with an enemy or enemy laser. The game becomes more challenging as you progress, with enemies spawning more frequently, making it harder to dodge their lasers. With its addictive gameplay and fast-paced action, Space Shooter is a must-play for fans of space-themed games.

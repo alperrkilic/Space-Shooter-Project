@@ -170,7 +170,6 @@ Project Link: [https://github.com/alperrkilic/Space-Shooter-Project](https://git
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
@@ -184,15 +183,15 @@ Developing a game like Space Shooter requires a significant amount of research, 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/alperrkilic/Face-Recognition---Realtime-Database--Improved-Version-.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/alperrkilic/Space-Shooter-Project.svg?style=for-the-badge
 [contributors-url]: https://github.com/alperrkilic/Space-Shooter-Project/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/alperrkilic/Face-Recognition---Realtime-Database--Improved-Version-.svg?style=for-the-badge
-[forks-url]: https://github.com/alperrkilic/Space-Shooter-Project/network/members
-[stars-shield]: https://img.shields.io/github/stars/alperrkilic/Face-Recognition---Realtime-Database--Improved-Version-.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/alperrkilic/Space-Shooter-Project.svg?style=for-the-badge
+[forks-url]: https://github.com/alperrkilic/Space-Shooter-Project/forks
+[stars-shield]: https://img.shields.io/github/stars/alperrkilic/Space-Shooter-Project.svg?style=for-the-badge
 [stars-url]: https://github.com/alperrkilic/Space-Shooter-Project/stargazers
-[issues-shield]: https://img.shields.io/github/issues/alperrkilic/Face-Recognition---Realtime-Database--Improved-Version-.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/alperrkilic/Space-Shooter-Project.svg?style=for-the-badge
 [issues-url]: https://github.com/alperrkilic/Space-Shooter-Project/issues
-[license-shield]: https://img.shields.io/github/license/alperrkilic/Face-Recognition---Realtime-Database--Improved-Version-.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/alperrkilic/Space-Shooter-Project.svg?style=for-the-badge
 [license-url]: https://github.com/alperrkilic/Space-Shooter-Project/blob/master/LICENSE.txt
 
 <!-- Built with and Social Media -->
@@ -210,6 +209,3 @@ Developing a game like Space Shooter requires a significant amount of research, 
 [main-menu]: Readme-Images/main-menu.png
 [game-over]: Readme-Images/game-over.png
 [shoot-to-start]: Readme-Images/shoot-to-start.png
-
-
-
